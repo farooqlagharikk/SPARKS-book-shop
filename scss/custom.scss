@@ -16,6 +16,8 @@ $custom-colors:(
     "bg-pricing":#f39c12,
     "bg-subscribe":#3498db,
     "pricing":#1abc9c,
+    "bg-contact": #e74c3c,
+    "bg-black": #000
 );
 
 $theme-colors: map-merge($theme-colors ,$custom-colors );

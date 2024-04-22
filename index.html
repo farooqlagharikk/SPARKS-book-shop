@@ -11,15 +11,17 @@
 
 
     <!-- Bootstrap CSS -->
-    <link href="/scss/custom_variables.css" rel="stylesheet"
-        >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="./css/custom.min.css">
 
     <title>Landing Page</title>
 </head>
 
 <body>
     <!-- First Section -->
-    <section class="bg-primary ">
+    <section class="bg-bg-hero ">
         <!-- Navbar  -->
         <header>
             <nav class="navbar navbar-light bg-transparent py-5">
@@ -34,7 +36,7 @@
                             <i class="fas fa-phone"></i>
                             <span class="fw-light">+925566778899</span>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item mt-2 mx-3">
                             <a class="nav-link text-light" href="#">
                                 <i class="fas fa-envelope"></i>
                                 <span class="fw-light">info@mycompany.com</span>
@@ -44,11 +46,7 @@
                             <i class="fas fa-download"></i>
                             <span class="fw-light">PURCHASE</span>
                         </button>
-
                     </ul>
-
-
-
                 </div>
             </nav>
         </header>
@@ -59,7 +57,7 @@
             <div class="container  " style="padding-bottom: 70px;">
                 <div class="row  m-auto justify-content-center">
                     <!-- Carousal Component -->
-                    <div id="carouselExampleSlidesOnly" class="carousel slide  col col-6" data-bs-ride="carousel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide   col-lg-6" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./assets/1.png" class="d-block w-100 " alt="...">
@@ -71,9 +69,9 @@
                     </div>
 
                     <!-- Form Component-->
-                    <form class="row col-5 bg-light border h-70 order-wrap" style="border-radius: 20px;">
+                    <form class="row col-lg-5 bg-light border order-wrap mt-3" style="border-radius: 20px;">
                         <!-- Heading -->
-                        <div class=" pt-3 text-center ">
+                        <div class=" py-3 text-center ">
                             <span class="border border-2 border-dark rounded-circle  p-2 mx-2 mt-n1">
                                 <i class="fas fa-shopping-cart"></i>
                             </span>
@@ -81,30 +79,30 @@
                         </div>
                         <!-- Heading -->
 
-                        <div class="col-md-6  mb-0">
+                        <div class="col-md-6  mb-2">
                             <input type="text" class="form-control fw-light " id="inputEmail4" placeholder="First Name">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-2">
                             <input type="text" class="form-control fw-light" id="inputPassword4"
                                 placeholder="Last Name">
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mb-2">
                             <input type="email" class="form-control fw-light" id="inputAddress"
                                 placeholder="Email Address ">
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mb-2">
                             <select id="inputState" class="form-select text-secondary fw-light">
                                 <option selected>Select a Book...</option>
                                 <option>Harry potter</option>
                                 <option>I know you from a dream </option>
                             </select>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mb-2">
                             <textarea class="form-control fw-light" id="exampleFormControlTextarea1" rows="3"
                                 placeholder="Question? If any..."></textarea>
                         </div>
 
-                        <div class="col-12 text-center ">
+                        <div class="col-12 text-center mb-2">
                             <button type="submit" class="btn btn-dark fw-bold fs-6 "
                                 style="padding:10px 60px">SUBMIT</button>
                         </div>
@@ -175,7 +173,7 @@
     <!-- Features Section ends -->
 
     <!-- Third Section  -->
-    <section class="bg-altprimary" >
+    <section class="bg-bg-about">
         <div class="container py-5">
             <div class="py-2 row justify-content-evenly">
                 <div class="col-lg-5 text-center">
@@ -227,7 +225,7 @@
     <!-- Third Section ends-->
 
     <!-- Testimonial Section -->
-    <section>
+    <section >
         <!-- heading -->
         <div class="container text-center mt-5 mb-5">
             <span class="border fs-4 border-1 border-dark rounded-circle py-3 px-3">
@@ -355,7 +353,7 @@
 
     <!-- Price card section . -->
 
-    <section class="bg-altprimary">
+    <section class="bg-bg-pricing border border-bg-pricing">
         <!-- heading -->
         <div class="container text-center mt-5 mb-5">
             <span class="border fs-4 border-1 border-dark rounded-circle py-3 px-3">
@@ -366,55 +364,82 @@
             </h2>
         </div>
 
-        <div class=" border border-secondary p-3 row m-auto justify-content-evenly">
+        <div class="container row m-auto justify-content-evenly">
             <!-- card One  -->
-            <div class="card col-lg-3" >
-                <div class="card-body">
-                  <h5 class="text-center">EBOOK VERSION</h5>               
+            <div class="card col-lg-3 p-0 m-0 mb-3">
+                <div class="pt-2">
+                    <h5 class="text-center fs-6 m-0 p-2" style="background-color: #f5f5f5;">EBOOK VERSION</h5>
                 </div>
-                
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
+
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">
+                        <h4 class="text-center">
+                            <span class="fs-1 fw-light">$</span><sub class="fs-1 fw-light">9</sub> <sup
+                                class="fs-2 fw-lighter ">99</sup>
+                        </h4>
+                    </li>
+                    <li class="list-group-item fw-bold  text-secondary">5 Projects</li>
+                    <li class="list-group-item fw-bold  text-secondary">5 GB of Storage</li>
+                    <li class="list-group-item fw-bold  text-secondary">Up to 100 Users
+                    </li>
+                    <li class="list-group-item fw-bold text-secondary">Security Suite
+
+                    </li>
                 </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                <div class=" text-center p-4">
+                    <button type="button" class="btn bg-pricing py-2 fw-bold text-light border-bottom-5 px-4">ORDER NOW!</button>
                 </div>
-              </div>
-              <div class="card col-lg-3" >
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+         
+            <div class="card col-lg-3 p-0 m-0  mb-3">
+                <div class="pt-2">
+                    <h5 class="text-center fs-6 m-0 p-2" style="background-color: #f5f5f5;">EBOOK VERSION</h5>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
+
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">
+                        <h4 class="text-center">
+                            <span class="fs-1 fw-light">$</span><sub class="fs-1 fw-light">9</sub> <sup
+                                class="fs-2 fw-lighter ">99</sup>
+                        </h4>
+                    </li>
+                    <li class="list-group-item fw-bold  text-secondary">5 Projects</li>
+                    <li class="list-group-item fw-bold  text-secondary">5 GB of Storage</li>
+                    <li class="list-group-item fw-bold  text-secondary">Up to 100 Users
+                    </li>
+                    <li class="list-group-item fw-bold text-secondary">Security Suite
+
+                    </li>
                 </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                <div class=" text-center p-4">
+                    <button type="button" class="btn bg-pricing py-2 fw-bold text-light border-bottom-5 px-4">ORDER NOW!</button>
                 </div>
-              </div>
-              <div class="card col-lg-3">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card col-lg-3 p-0 m-0  mb-3">
+                <div class="pt-2">
+                    <h5 class="text-center fs-6 m-0 p-2" style="background-color: #f5f5f5;">EBOOK VERSION</h5>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
+
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">
+                        <h4 class="text-center">
+                            <span class="fs-1 fw-light">$</span><sub class="fs-1 fw-light">9</sub> <sup
+                                class="fs-2 fw-lighter ">99</sup>
+                        </h4>
+                    </li>
+                    <li class="list-group-item fw-bold  text-secondary">5 Projects</li>
+                    <li class="list-group-item fw-bold  text-secondary">5 GB of Storage</li>
+                    <li class="list-group-item fw-bold  text-secondary">Up to 100 Users
+                    </li>
+                    <li class="list-group-item fw-bold text-secondary">Security Suite
+
+                    </li>
                 </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                <div class=" text-center p-4">
+                    <button type="button" class="btn bg-pricing py-2 fw-bold text-light border-bottom-5 px-4">ORDER NOW!</button>
                 </div>
-              </div>
+            </div>
+            
         </div>
 
     </section>

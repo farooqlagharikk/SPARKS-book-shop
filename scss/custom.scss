@@ -1,0 +1,23 @@
+
+
+// Variables Override
+$primary: rgb(15, 155, 50);
+$secondary:rgb(126, 126, 128);
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Custom Map 
+$custom-colors:(
+    "bg-hero": #eb4b01,
+    "bg-about":#2ecc71,
+    "bg-pricing":#f39c12,
+    "bg-subscribe":#3498db,
+    "pricing":#1abc9c,
+);
+
+$theme-colors: map-merge($theme-colors ,$custom-colors );
+
+@import "../node_modules/bootstrap/scss/bootstrap"
